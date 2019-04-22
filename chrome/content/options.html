@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+
+  <body style="font-family: sans-serif; color: rgb(51, 51, 51)">
+
+    <h3>Options for PwdHash</h3>
+    <p>You have to reload an open page to make changes here effective.<br/>
+    Use Shift-F2 to use legacy mode on demand.</p>
+    <form>
+    <table width="100%">
+    <tr>
+        <td><label class="detail-row"><b>User Salt</b>
+        <br/>required <b>and you have to remember this!</b></label></td>
+        <td><input type="text" id="salt" required="true"><td>
+    </tr>
+    <tr>    
+        <td><label class="detail-row" ><b>Iterations</b>
+        <br/>(rounds for PBKDF2, higher means more secure but also more time to generate password)</label></td>
+        <td><input type="number" id="iterations" min="10" max="99999999"></label>
+    </tr>
+    <tr>    
+        <td><label class="detail-row" ><b>Legacy mode</b>
+        <br/>(use MD5 for password, makes generated password only as secure as master password, disables salt and iterations)</label></td>
+        <td><input type="checkbox" id="legacy" ></label>
+    </tr>
+    <tr>    
+        <td/><td><button type="submit">Save options</button></td>
+    </tr>
+    </table>
+    </form>
+
+    <script src="options.js"></script>
+
+  </body>
+
+</html>
