@@ -11,5 +11,3 @@ Changes to the original Stanford PwdHash:
 4. Added the option to store a user-specified salt and iteration count.
 5. Added the option to use legacy (Stanford PwdHash) mode by Shift-F2 or in the options
 
-## Website
-You can generate passwords without the plugin at https://gwuk.github.io/PwdHash2/
