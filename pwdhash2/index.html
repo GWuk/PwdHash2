@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>PwdHash2</title>
+  <meta name="description" content="PwdHash2 - secure site based passwords">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+
+  <script src="forge.min.js" type="text/javascript"></script>
+  <script src="md5.min.js" type="text/javascript"></script>
+  <script src="domain-extractor.min.js" type="text/javascript"></script>
+  <script src="hashed-password.js" type="text/javascript"></script>
+  <script src="pwdhash2.js" type="text/javascript"></script>
+
+  </head>
+<body onLoad="Init();">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+   <div class="row"><h1>PwdHash2</h1></div>
+   <div class="row"><h4>Create a secure site specific password based on your own master password and salt</h4></div>
+   <div class="row"><h3>&nbsp;</h3></div>
+   <form name="hashform" action="error.html" method="post" onsubmit="setTimeout('GenerateToTextField()', 0); return false;" id="hashform">
+    <div class="row">
+      <div class="four columns" >
+       <h3>Salt</h3>
+      </div>
+     <div class="eight columns" >
+      <input name="salt" type="text" />
+     </div>
+    </div>
+    <div class="row">
+     <div class="four columns" >
+      <h3>Iterations</h3>
+     </div>
+     <div class="eight columns" >
+      <input name="iterations" type="number" value="50000"/>
+     </div>
+    </div>
+    <div class="row">
+     <div class="four columns" >
+      <h3>URL</h3>
+     </div>
+     <div class="eight columns" >
+      <input value="" name="domain" type="text" />
+     </div>
+    </div>
+    <div class="row">
+     <div class="four columns" >
+      <h3>your password</h3>
+     </div>
+     <div class="eight columns" >
+      <input name="sitePassword" type="password" />
+     </div>
+    </div>
+    <div class="row">
+     <div class="four columns" >
+      <h3>password for URL</h3>
+     </div>
+     <div class="eight columns" >
+       <span id="theGeneratePanel">
+         <input value="" disabled="disabled" name="hashedPassword" type="text" />
+         <button onclick="setTimeout('GenerateToTextField()', 0); return false;">create</button>
+       </span>
+     </div>
+    </div>
+   </form>
+   <div class="row">Note: no user input here is sent anywhere remote, everything happens locally in your browser</div>
+   <div class="row">See source and Firefox add-on at <a href="https://github.com/GWuk/PwdHash2/">github.com/GWuk/PwdHash2</a></div>
+   <div class="row">Based on <a href="https://pwdhash.github.io/website/">Stanford PwdHash</a> and <a href="https://github.com/llewelld/pwdhash-poc">PwdHash-PoC</a></div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

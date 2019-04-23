@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>PwdHash</title>
+  <meta name="description" content="PwdHash - site based passwords">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+
+
+  <script src="md5-min.js" type="text/javascript"></script>
+  <script src="pwdhash-min.js" type="text/javascript"></script>
+  <script src="hashed-password-min.js" type="text/javascript"></script>
+  <script src="domain-extractor-min.js" type="text/javascript"></script>
+
+  </head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+   <div class="row"><h1>PwdHash</h1></div>
+   <div class="row"><h4>Create a site specific password based on your own master password</h4></div>
+   <div class="row"><h3>&nbsp;</h3></div>
+   <form name="hashform" action="error.html" method="post" onsubmit="setTimeout('GenerateToTextField()', 0); return false;" id="hashform">
+   <div class="row">
+     <div class="four columns" >
+      <h3>URL</h3>
+     </div>
+     <div class="eight columns" >
+      <input value="" name="domain" type="text" />
+     </div>
+   </div>
+   <div class="row">
+     <div class="four columns" >
+      <h3>your password</h3>
+     </div>
+     <div class="eight columns" >
+      <input name="sitePassword" type="password" />
+     </div>
+   </div>
+   <div class="row">
+     <div class="four columns" >
+      <h3>password for URL</h3>
+     </div>
+     <div class="eight columns" >
+       <span id="theGeneratePanel">
+         <input value="" disabled="disabled" name="hashedPassword" type="text" />
+         <button onclick="setTimeout('GenerateToTextField()', 0); return false;">Create</button>
+       </span>
+     </div>
+   </div>
+   </form>
+  <div class="row">Note: no user input here is sent anywhere remote, everything happens locally in your browser</div>
+  <div class="row">See source and Firefox add-on at <a href="https://github.com/GWuk/PwdHash2/">github.com/GWuk/PwdHash2</a></div>
+  <div class="row">Based on <a href="https://pwdhash.github.io/website/">Stanford PwdHash</a></div>
+  </div>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
