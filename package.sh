@@ -4,7 +4,7 @@ if [ ! -f manifest.json ]; then
   echo "Please execute inside project directory!"
 fi
 
-excludedfiles=("package.sh" "icons/pwdhash-icon.svg" ".git/*" "screenshots/*")
+excludedfiles=("package.sh" "icons/pwdhash-icon.svg" ".git/*" "screenshots/*" "docs/*")
 
 currentversion=$(grep -oP '"version": "\K[\d.]+' manifest.json)
 
