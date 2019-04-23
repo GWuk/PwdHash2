@@ -1,10 +1,10 @@
 # PwdHash2
-Firefox Add-On PwdHash alternative, based on PwdHash and PwdHash-PoC, migrated to WebExtension and PBKDF2-SHA256 support
+PwdHash2 is a Firefox Add-On, based on [Stanford PwdHash](https://www.pwdhash.com/) and [PwdHash-PoC](https://github.com/llewelld/pwdhash-poc)
+
+Get the add-on at [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/pwdhash2/)
+
 
 ## Overview
-
-This is an alteration to the [Stanford PwdHash](https://www.pwdhash.com/) tool, based on [PwdHash-PoC](https://github.com/llewelld/pwdhash-poc) 
-
 Changes to the original Stanford PwdHash:
 1. Fixed defunct original version, caused by changes in Firefox 66 keypress event handling
 2. Highlight password field, if active
