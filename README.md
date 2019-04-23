@@ -2,7 +2,6 @@
 Firefox Add-On PwdHash alternative, based on PwdHash and PwdHash-PoC, migrated to WebExtension and PBKDF2-SHA256 support
 
 ## Overview
-
 This is an alteration to the [Stanford PwdHash](https://www.pwdhash.com/) tool, based on [PwdHash-PoC](https://github.com/llewelld/pwdhash-poc) 
 
 Changes to the original Stanford PwdHash:
@@ -11,3 +10,6 @@ Changes to the original Stanford PwdHash:
 3. Option to change the hash algorithm from HMAC-MD5 to PBKDF2-SHA256.
 4. Added the option to store a user-specified salt and iteration count.
 5. Added the option to use legacy (Stanford PwdHash) mode by Shift-F2 or in the options
+
+## Website
+You can generate passwords without the plugin at https://gwuk.github.io/PwdHash2/
