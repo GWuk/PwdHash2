@@ -1,5 +1,7 @@
 # PwdHash2
-PwdHash2 is a Firefox Add-On, based on [Stanford PwdHash](https://www.pwdhash.com/) and [PwdHash-PoC](https://github.com/llewelld/pwdhash-poc), migrated to WebExtension and PBKDF2-SHA256 support.
+PwdHash2 is a Firefox Add-On to create secure, site-based passwords. 
+
+It is based on [Stanford PwdHash](https://www.pwdhash.com/) and [PwdHash-PoC](https://github.com/llewelld/pwdhash-poc)
 
 ---
 
