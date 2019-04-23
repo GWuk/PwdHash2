@@ -3,7 +3,7 @@ Create secure, site based passwords based on your master password and the site's
 You have to define a salt in the add-on's options and remember this as good as your master password
 
 # GitHub project page
-The GitHub project is located at https://github.com/GWuk/PwdHash2/ 
+The GitHub project is located at [https://github.com/GWuk/PwdHash2/](https://github.com/GWuk/PwdHash2/)
 
 ## Internals
 This is an alteration to the [Stanford PwdHash](https://www.pwdhash.com/) tool, based on [PwdHash-PoC](https://github.com/llewelld/pwdhash-poc) 
