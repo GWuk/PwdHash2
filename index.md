@@ -8,6 +8,8 @@ You can create the password without the add-on locally in the browser (no user i
 * [PwdHash (Legacy)](pwdhash/)
 * [PwdHash2](pwdhash2/)
 
+
+
 ## Changes to the original Stanford PwdHash:
 1. Fixed defunct original version, caused by changes in Firefox 66.0.2 keypress event handling
 2. Highlight password field, if active
