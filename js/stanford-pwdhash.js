@@ -278,7 +278,7 @@ SPH_PasswordProtector.prototype = {
     }
 
     // Printable keystrokes should be masked
-    if(evt.type == "keypress") {
+    if(evt.type == "keypress" && evt.charCode!=13) {
       evt.stopPropagation();   // Don't let user JavaScript see this event
       evt.preventDefault();    // Do not let the character hit the page
       evt.originalTarget.value = evt.originalTarget.value + String.fromCharCode(this.mask(evt.charCode));
