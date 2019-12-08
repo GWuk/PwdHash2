@@ -2,7 +2,7 @@
 
  "manifest_version": 2,
  "name": "PwdHash2",
- "version": "1.0",
+ "version": "1.0.1",
  "default_locale": "en",
  
  "description": "Automatically generates per-site passwords if you prefix your password with @@ or F2.",
